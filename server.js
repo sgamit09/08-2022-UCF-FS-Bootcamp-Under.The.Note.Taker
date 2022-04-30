@@ -18,7 +18,7 @@ app.get('/', (req, res) =>
 );
 
 // GET request for reviews
-app.get('/api/notes', (req, res) => {
+app.get('/notes', (req, res) => {
   // Send a message to the client
   res.status(200).json(`${req.method} request received to get notes`);
 
@@ -27,7 +27,7 @@ app.get('/api/notes', (req, res) => {
 });
 
 // POST request to add a review
-app.post('/api/notes', (req, res) => {
+app.post('/notes', (req, res) => {
   // Log that a POST request was received
   console.info(`${req.method} request received to add a notes`);
 
